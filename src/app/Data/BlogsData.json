@@ -2,8 +2,8 @@
 
 {
     "medical": [
-        { "id": 1,"imageUrl": {}, "title": "The Role of Technology in Diabetes Care: Wearable Devices and Mobile Apps", "description": "", "category": "medical" },
-        { "id": 2,"imageUrl": {}, "title": "Understanding Blood Sugar Spikes: Causes and Prevention of glucose level", "description": "", "category": "medical" },
-        { "id": 3,"imageUrl": {}, "title": "Discover the benefits of regular exercise for individuals with diabetes", "description": "", "category": "medical" }
+        { "id": 1,"imageUrl": "/images/Blogs/blog1.png", "title": "The Role of Technology in Diabetes Care: Wearable Devices and Mobile Apps", "description": "", "category": "medical" },
+        { "id": 2,"imageUrl": "/images/Blogs/blog1.png", "title": "Understanding Blood Sugar Spikes: Causes and Prevention of glucose level", "description": "", "category": "medical" },
+        { "id": 3,"imageUrl": "/images/Blogs/blog1.png", "title": "Discover the benefits of regular exercise for individuals with diabetes", "description": "", "category": "medical" }
     ]
 }

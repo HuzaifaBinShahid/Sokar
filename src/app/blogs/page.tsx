@@ -1,30 +1,39 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import blogmain from '../../../public/images/Blogs/blogmainimg.png'
-import calender from '../../../public/images/Blogs/calender.png'
+import blogmain from '../../../public/images/Blogs/blogmainimg.png';
+import calender from '../../../public/images/Blogs/calender.png';
 import BlogCard from '../common_views/BlogCards/BlogCrad';
-import blogsData from '../Data/BlogsData.json'
-import blogimage from '../../../public/images/Blogs/blog1.png'
+import blogsData from '../Data/BlogsData.json';
 
 interface Blog {
     id: number;
     imageUrl: string;
     title: string;
     description: string;
+    category: string;
 }
 
 const Blogsmain = () => {
     const blogsPerPage = 9;
     const [currentPage, setCurrentPage] = useState(1);
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string>();
     const [searchTerm, setSearchTerm] = useState('');
+
+    // Convert blog data
+    const convertBlogData = (blogsData: any): Blog[] => {
+        return Object.values(blogsData).flat().map((blog: any) => ({
+            ...blog,
+            imageUrl: typeof blog.imageUrl === 'string' ? blog.imageUrl : ''
+        }));
+    };
+
+    const allBlogs = convertBlogData(blogsData);
 
     // Filter blogs based on selected category and search term
     const filteredBlogs = selectedCategory
-        ? (blogsData[selectedCategory as keyof typeof blogsData] as Blog[]).filter(blog => blog.title.toLowerCase().includes(searchTerm.toLowerCase()))
-        : Object.values(blogsData).flat().filter(blog => blog.title.toLowerCase().includes(searchTerm.toLowerCase()));
-
+        ? allBlogs.filter(blog => blog.category === selectedCategory && blog.title.toLowerCase().includes(searchTerm.toLowerCase()))
+        : allBlogs.filter(blog => blog.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
     // Pagination logic
     const indexOfLastBlog = currentPage * blogsPerPage;
@@ -36,7 +45,6 @@ const Blogsmain = () => {
 
     return (
         <>
-
             <section id='blogsmain'>
                 <div className="blogs-content my-32 w-4/6 m-auto">
                     <div className="container mx-auto flex items-center justify-center">
@@ -60,26 +68,20 @@ const Blogsmain = () => {
                             objectFit="cover"
                             className="rounded-3xl"
                         />
-
-                        <div className="absolute bottom-5  md:left-10 xs:left-5 transform-translate-x-1/2  text-left">
-
-                            <span className="text-white text-lg flex my-5"> <Image src={calender} alt='calender' /> <span className='mx-5'>Apr 12, 2024</span> </span>
+                        <div className="absolute bottom-5 md:left-10 xs:left-5 transform-translate-x-1/2 text-left">
+                            <span className="text-white text-lg flex my-5"><Image src={calender} alt='calender' /> <span className='mx-5'>Apr 12, 2024</span></span>
                             <p className="text-white text-lg my-5">Insulin Injection Techniques: Tips for Safe and Effective Administration</p>
                             <p className="text-colortag text-lg ">Read More..</p>
                         </div>
                     </div>
                 </div>
-
                 <div className="container m-auto blogcards flex flex-col justify-content-center align-items-center">
-                    <div className=" md:my-32 xs:my-5">
+                    <div className="md:my-32 xs:my-5">
                         <div className="flex flex-wrap justify-center">
                             {currentBlogs.map((blog, index) => (
-                                <div
-                                    key={index}
-                                    className=" xs:w-full md:w-1/2 lg:w-1/3 flex justify-center"
-                                >
+                                <div key={index} className="xs:w-full md:w-1/2 lg:w-1/3 flex justify-center">
                                     <BlogCard
-                                        imageUrl={blogimage}
+                                        imageUrl={blog.imageUrl}
                                         title={blog.title}
                                         description={blog.description}
                                     />
@@ -87,10 +89,6 @@ const Blogsmain = () => {
                             ))}
                         </div>
                     </div>
-
-
-
-
                     {/* Pagination */}
                     {filteredBlogs.length > 0 && (
                         <nav>
@@ -104,11 +102,7 @@ const Blogsmain = () => {
                         </nav>
                     )}
                 </div>
-
-
-
-            </section >
-
+            </section>
         </>
     );
 };
