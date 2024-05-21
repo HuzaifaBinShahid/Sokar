@@ -9,25 +9,26 @@ interface CardProps {
   description: string;
   detailImage: StaticImageData;
   detailImageAlt: string;
+  detailImageClassName?: string; 
 }
 
-const FeatureCard: React.FC<CardProps> = ({ icon, iconAlt, head,title, description, detailImage, detailImageAlt }) => {
+const FeatureCard: React.FC<CardProps> = ({ icon, iconAlt, head, title, description, detailImage, detailImageAlt, detailImageClassName }) => {
   return (
-    <div className="card bg-blogcard p-10 rounded-3xl w-11/12">
-      <div className="card-content">
-        <div className="logo flex mb-12">
+    <div className="card bg-blogcard rounded-3xl w-11/12 overflow-hidden">
+      <div className="card-content ">
+        <div className="logo flex mb-12 p-10">
           <span>
             <Image src={icon} alt={iconAlt} />
           </span>
           <p className="flex items-center mx-5 text-2xl">{head}</p>
         </div>
         
-        <h3 className="text-4xl font-semibold my-3">{title}</h3>
-        <p className="text-paragraph text-2xl leading-8 my-3">
+        <h3 className="text-4xl font-semibold my-3 px-10">{title}</h3>
+        <p className="text-paragraph text-2xl leading-8 my-3 px-10">
           {description}
         </p>
 
-        <Image src={detailImage} alt={detailImageAlt} className="w-full" />
+        <Image src={detailImage} alt={detailImageAlt} className={` ${detailImageClassName}`} />
       </div>
     </div>
   );

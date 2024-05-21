@@ -17,7 +17,9 @@ const config: Config = {
         colortag: "#66E4FE",
         paragraph: "#FFFFFF99",
         footer:"#FFFFFF1A",
-        blogcard: "#FFFFFF1A"
+        blogcard: "#FFFFFF1A",
+        button: "#0C3942",
+        border: "#FFFFFF80"
       },
       screens: {
         'xs': '310px',  

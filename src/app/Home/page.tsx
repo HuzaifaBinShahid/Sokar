@@ -1,8 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+
+//importing assets
 import mainimage from '../../../public/images/Home/homemain.png'
 import aboutimage from '../../../public/images/Home/about.png'
+
+// importing Components
 import Features from '../Components/Home/Features'
+import Pricing from '../Components/Home/Pricing'
+import Blogs from '../Components/Home/Blogs'
 
 const page = () => {
     return (
@@ -48,6 +54,9 @@ const page = () => {
             </div>
 
             <Features />
+            <Pricing />
+            <Blogs />
+            
         </section>
 
     )
