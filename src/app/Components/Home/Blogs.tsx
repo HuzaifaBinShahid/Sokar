@@ -40,7 +40,7 @@ const Blogs = () => {
                             <span><Image src={calender} alt='calender' /></span><span className='text-paragraph mx-3'>Apr 12, 2024</span>
                         </div>
 
-                        <h3 className='lg:text-4xl xs:text-xl leading-normal font-semibold'>The Role of Technology in Diabetes Care: Wearable Devices and Mobile Apps</h3>
+                        <h3 className=' lg:text-4xl xs:text-xl leading-normal font-semibold'>The Role of Technology in Diabetes Care: Wearable Devices and Mobile Apps</h3>
                         <p className='text-colortag mt-12'>Read More...</p>
                     </div>
 
@@ -49,16 +49,16 @@ const Blogs = () => {
                             <Image
                                 src={blog2}
                                 alt='blog-image'
-                                className='rounded-2xl w-3/6 p-5'
+                                className='rounded-2xl xl:w-10/12 p-5'
                             />
 
-                            <div className="content flex-col py-10">
+                            <div className="content flex-col py-10 relative">
                                 <div className="date flex my-3">
                                     <span><Image src={calender} alt='calender' /></span><span className='text-paragraph mx-3'>Apr 12, 2024</span>
                                 </div>
 
-                                <h3 className='text-4xl leading-normal font-semibold w-5/6'>Understanding Blood Sugar Spikes: Causes and Prevention.......</h3>
-                                <p className='text-colortag mt-12'>Read More...</p>
+                                <h3 className='2xl:text-4xl lg:text-2xl leading-normal font-semibold w-5/6'>Understanding Blood Sugar Spikes: Causes and Prevention.......</h3>
+                                <p className='text-colortag mt-12 absolute bottom-7'>Read More...</p>
                             </div>
                         </div>
 
@@ -66,16 +66,16 @@ const Blogs = () => {
                             <Image
                                 src={blog3}
                                 alt='blog-image'
-                                className='rounded-2xl w-3/6 p-5 '
+                                className='rounded-2xl  xl:w-10/12 p-5 '
                             />
 
-                            <div className="content flex-col py-10">
+                            <div className="content flex-col py-10 relative">
                                 <div className="date flex my-3">
                                     <span><Image src={calender} alt='calender' /></span><span className='text-paragraph mx-3'>Apr 12, 2024</span>
                                 </div>
 
-                                <h3 className='text-4xl leading-normal font-semibold w-5/6'>Discover the benefits of regular exercise for individuals with diab</h3>
-                                <p className='text-colortag mt-12'>Read More...</p>
+                                <h3 className='2xl:text-4xl lg:text-2xl leading-normal font-semibold w-5/6'>Discover the benefits of regular exercise for individuals with diab</h3>
+                                <p className='text-colortag mt-12 absolute bottom-7'>Read More...</p>
                             </div>
                         </div>
                     </div>

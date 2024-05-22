@@ -39,7 +39,7 @@ const ContactUs = () => {
                         </div>
                     </div>
 
-                    <div className="image w-3/6 lg:block xs:hidden">
+                    <div className="image xl:w-3/6 lg:w-full lg:block xs:hidden">
                         <Image src={contactusimage} alt='contact us image' className='w-full' />
                     </div>
                 </div>
