@@ -83,7 +83,7 @@ const Features = () => {
 
                     <div className="card-content md:block ">
                         <div className="left px-10 xs:m-auto xs:w-full">
-                            <div className="logo flex mb-12 xs:my-5">
+                            <div className="logo flex mb-12 2xl:my-20 lg:my-14 xs:my-5">
                                 <span>
                                     <Image src={share} alt='share-icon' />
                                 </span>
@@ -92,7 +92,7 @@ const Features = () => {
 
 
 
-                            <h3 className="lg:text-4xl xs:text-2xl font-semibold my-3">Parent & Child Sharing</h3>
+                            <h3 className=" lg:text-4xl xs:text-2xl font-semibold my-3">Parent & Child Sharing</h3>
                             <p className="text-paragraph lg:text-2xl xs:text-xl leading-10 my-3 w-5/6 ">
                                 Share your diabetic management journey with your added parent or child so that they can track your real time glucose level and help you in this journey
                             </p>
