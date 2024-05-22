@@ -12,10 +12,10 @@ import location from '../../../public/images/Footer/location.svg';
 const Footer = () => {
     return (
         <section id="footer" className='bg-footer'>
-            <div className="footer-content">
+            <div className="footer-content  md:p-6">
                 <div className="container m-auto flex">
                     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:my-12 xs:my-6">
-                        <div className='section1 flex flex-col md:w-4/6 m-auto xs:w-11/12'>
+                        <div className='section1 flex flex-col m-auto w-full '>
                             <Image
                                 src={footerlogo}
                                 alt='sokarlogo'
@@ -65,7 +65,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="section3 my-12 flex justify-center xs:justify-center xs:my-2">
+                        <div className="section3 my-12 flex md:justify-start xs:justify-center xs:my-2">
                             <div className="md:text-left xs:text-center">
                             <h3 className='text-2xl font-semibold'>Contact Us</h3>
                             <ul>

@@ -17,13 +17,13 @@ import FeatureCard from '../../common_views/FeaturesCard/FeaturesCard'
 const Features = () => {
     return (
         <section id="features ">
-            <div className="container mx-auto items-center justify-center my-20">
+            <div className="container mx-auto items-center justify-center my-20 md:p-6">
                 <div className="feature-content text-center">
                     <p className='text-colortag md:text-4xl xs:text-2xl'>Features</p>
                     <h2 className=' md:text-6xl xs:text-xl font-semibold my-5'>What Sokar Offers?</h2>
                 </div>
 
-                <div className="boxes grid md:grid-cols-2 my-20">
+                <div className="boxes grid md:grid-cols-2 gap-20 my-20">
 
                     <FeatureCard
                         icon={glucose}
@@ -50,8 +50,8 @@ const Features = () => {
 
                 </div>
 
-                <div className="boxes grid md:grid-cols-12 gap-0 my-20">
-                    <div className="md:col-span-7">
+                <div className="boxes grid lg:grid-cols-12 md:grid-cols-12 gap-20 my-20">
+                    <div className="md:col-span-5 lg:col-span-7">
                         <FeatureCard
                             icon={heart}
                             iconAlt="Heart Icon"
@@ -64,7 +64,7 @@ const Features = () => {
                         />
                     </div>
 
-                    <div className="md:col-span-5 ">
+                    <div className="md:col-span-5 lg:col-span-5">
                         <FeatureCard
                             icon={insulin}
                             iconAlt="Insulin Icon"
@@ -73,36 +73,37 @@ const Features = () => {
                             description="Add your insulin units when you find your glucose level down and you can track your preview insulin activity."
                             detailImage={insulindetail}
                             detailImageAlt="Insulin Detail"
-                            detailImageClassName="w-11/12"
+                            detailImageClassName="lg:w-11/12 md:w-4/6 m-auto"
                         />
                     </div>
                 </div>
 
 
-                <div className="share-box bg-blogcard rounded-3xl w-[97%]">
+                <div className="share-box grid lg:grid-cols-2 xs:grid-cols-1 bg-blogcard rounded-3xl w-full">
 
-                    <div className="card-content lg:flex md:block xs:block">
-                        <div className="left lg:w-5/6 px-10 xs:m-auto xs:w-full">
-                            <div className="logo flex mb-12">
+                    <div className="card-content md:block ">
+                        <div className="left px-10 xs:m-auto xs:w-full">
+                            <div className="logo flex mb-12 xs:my-5">
                                 <span>
                                     <Image src={share} alt='share-icon' />
                                 </span>
-                                <p className="flex items-center mx-5 text-2xl">Share Glucose</p>
+                                <p className="flex items-center mx-5 lg:text-2xl xs:text-xl">Share Glucose</p>
                             </div>
 
 
 
-                            <h3 className="text-4xl font-semibold my-3">Parent & Child Sharing</h3>
-                            <p className="text-paragraph text-2xl leading-8 my-3">
+                            <h3 className="lg:text-4xl xs:text-2xl font-semibold my-3">Parent & Child Sharing</h3>
+                            <p className="text-paragraph lg:text-2xl xs:text-xl leading-10 my-3 w-5/6 ">
                                 Share your diabetic management journey with your added parent or child so that they can track your real time glucose level and help you in this journey
                             </p>
 
                         </div>
 
-                        <div className="right md:pt-10 xs:px-10">
 
-                            <Image src={sharedetail} alt="Share Detail" className="w-full" />
-                        </div>
+                    </div>
+                    <div className="right md:pt-10 xs:px-10">
+
+                        <Image src={sharedetail} alt="Share Detail" className="w-full" />
                     </div>
 
                 </div>

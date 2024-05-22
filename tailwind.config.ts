@@ -19,7 +19,10 @@ const config: Config = {
         footer:"#FFFFFF1A",
         blogcard: "#FFFFFF1A",
         button: "#0C3942",
-        border: "#FFFFFF80"
+        border: "#FFFFFF80",
+        head: "#FFFFFF99",
+        text: "#FFFFFFB2",
+        fade: "rgba(255, 255, 255, 0.9)",
       },
       screens: {
         'xs': '310px',  

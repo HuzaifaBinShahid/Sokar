@@ -9,6 +9,7 @@ import aboutimage from '../../../public/images/Home/about.png'
 import Features from '../Components/Home/Features'
 import Pricing from '../Components/Home/Pricing'
 import Blogs from '../Components/Home/Blogs'
+import ContactUs from '../common_views/ContactUs'
 
 const page = () => {
     return (
@@ -34,10 +35,11 @@ const page = () => {
                     <Image
                     src={mainimage}
                     alt='main-image'
+                    className='m-auto'
                     />
                 </div>
 
-                <div className="about grid md:grid-cols-2 xs:grid-cols-1">
+                <div className="about grid md:grid-cols-2 xs:grid-cols-1 md:p-4">
                     <div className="about-image">
                         <Image 
                         src={aboutimage}
@@ -48,7 +50,7 @@ const page = () => {
                     <div className="about-text flex flex-col justify-center align-middle lg:text-left xs:text-center p-5">
                         <p className='text-colortag lg:text-4xl md:text-2xl xs:text-xl my-3'>About</p>
                         <h2 className='lg:text-6xl md:text-4xl xs:text-2xl font-semibold my-5'>What Is Sokar?</h2>
-                        <p className='text-paragraph lg:text-2xl md:text-xl xs:text-lg my-5 leading-10'>The sokar app, powered by cutting edge AI Technology and real time glucose monitoring to transform your health journey. The sokar app, powered by cutting edge AI Technology and real time glucose monitoring to transform your health journey</p>
+                        <p className='text-paragraph lg:text-2xl md:text-xl xs:text-lg my-5 leading-10 lg:w-5/6 xs:w-full'>The sokar app, powered by cutting edge AI Technology and real time glucose monitoring to transform your health journey. The sokar app, powered by cutting edge AI Technology and real time glucose monitoring to transform your health journey</p>
                     </div>
                 </div>
             </div>
@@ -56,7 +58,8 @@ const page = () => {
             <Features />
             <Pricing />
             <Blogs />
-            
+            <ContactUs />
+
         </section>
 
     )

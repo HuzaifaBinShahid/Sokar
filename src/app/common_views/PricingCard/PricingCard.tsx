@@ -19,10 +19,10 @@ interface Props {
 
 const PricingCard: React.FC<Props> = ({ title, description, points ,price}) => {
   return (
-    <div className=" mx-auto bg-blogcard rounded-xl shadow-md overflow-hidden w-11/12  my-10">
+    <div className=" mx-auto bg-blogcard rounded-xl shadow-md overflow-hidden my-10">
       <div className=" text-center">
-        <h3 className="text-4xl font-semibold mb-2 px-10 pt-16">{title}</h3>
-        <p className="text-gray-500 mb-4 text-2xl px-10 py-5">{description}</p>
+        <h3 className="text-4xl font-semibold mb-2 px-10 pt-16 ">{title}</h3>
+        <p className="text-gray-500 mb-4 text-2xl px-10 py-5 text-head">{description}</p>
         <div className="space-y-6 my-10">
           {points.map(point => (
             <li key={point.id} className="flex items-center space-x-2 px-10">

@@ -127,7 +127,7 @@ const Pricing = () => {
     ];
     return (
         <section id="pricing">
-            <div className="container pricing-content m-auto">
+            <div className="container pricing-content m-auto md:p-6">
                 <div className="text-center">
                     <p className='text-colortag my-6 font-normal md:text-4xl xs:text-2xl'>Pricing</p>
                     <h2 className='md:text-6xl md:my-6 font-semibold xs:text-2xl xs:my-2'>
@@ -138,7 +138,7 @@ const Pricing = () => {
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-0 relative">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-8 relative">
 
                     <div className="relative">
                         <div className="absolute inset-0 flex items-center justify-center transform -translate-x-2/2 -translate-y-[45%]">

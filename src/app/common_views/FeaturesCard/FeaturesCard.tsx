@@ -14,17 +14,17 @@ interface CardProps {
 
 const FeatureCard: React.FC<CardProps> = ({ icon, iconAlt, head, title, description, detailImage, detailImageAlt, detailImageClassName }) => {
   return (
-    <div className="card bg-blogcard rounded-3xl w-11/12 overflow-hidden">
+    <div className="card bg-blogcard rounded-3xl w-full overflow-hidden">
       <div className="card-content ">
-        <div className="logo flex mb-12 p-10">
+        <div className="logo flex lg:mb-12 xs:mb-0 p-10">
           <span>
             <Image src={icon} alt={iconAlt} />
           </span>
-          <p className="flex items-center mx-5 text-2xl">{head}</p>
+          <p className="flex items-center mx-5 lg:text-2xl xs:text-xl">{head}</p>
         </div>
         
-        <h3 className="text-4xl font-semibold my-3 px-10">{title}</h3>
-        <p className="text-paragraph text-2xl leading-8 my-3 px-10">
+        <h3 className="lg:text-4xl xs:text-2xl font-semibold my-3 px-10">{title}</h3>
+        <p className="text-paragraph lg:text-2xl xs:text-xl leading-8 my-3 px-10">
           {description}
         </p>
 
