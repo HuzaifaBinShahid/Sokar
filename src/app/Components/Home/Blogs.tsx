@@ -23,7 +23,7 @@ const Blogs = () => {
                     </div>
 
                     <div className="view">
-                       <Link href = '/blogs'> <p className='text-colortag text-2xl underline pt-20 animate-slideDown'>View All <ArrowForwardIcon className='underline'/></p> </Link>
+                       <Link href = '/blogs'> <p className='text-colortag text-2xl xs:text-lg  underline pt-20 animate-slideDown'>View All <ArrowForwardIcon className='underline'/></p> </Link>
                     </div>
 
                 </div>
