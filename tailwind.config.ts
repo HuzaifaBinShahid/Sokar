@@ -24,6 +24,21 @@ const config: Config = {
         text: "#FFFFFFB2",
         fade: "rgba(255, 255, 255, 0.9)",
       },
+      keyframes: {
+        glow: {
+          '0%, 100%': { color: '#66E4FE', },
+          '50%': { color: 'white', },
+        },
+        slideDown: {
+          '0%': { opacity: '0', transform: 'translateY(-50px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        glow: 'glow 1.5s infinite',
+        slideDown: 'slideDown 1s ease-out forwards',
+      },
+    
       screens: {
         'xs': '310px',  
       },

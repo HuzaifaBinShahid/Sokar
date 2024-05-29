@@ -35,7 +35,7 @@ const ContactUs = () => {
 
 
                             <textarea name="message" id="message" className='bg-blogcard pt-3 px-7 rounded-xl w-10/12 mt-5 resize-none' placeholder='Message' cols={30} rows={8}></textarea>
-                            <button className='bg-colortag w-10/12 text-black lg:px-10 lg:py-5 xs:px-3 xs:py-5  my-10 rounded-2xl lg:text-2xl xs:text-xl font-semibold'>Send Message</button>
+                            <button className='bg-colortag w-10/12 text-black lg:px-10 lg:py-5 xs:px-3 xs:py-5  my-10 rounded-2xl lg:text-2xl xs:text-xl font-semibold transition duration-300 ease-in-out hover:bg-blogcard hover:text-white hover:border-2 hover:border-colortag'>Send Message</button>
                         </div>
                     </div>
 

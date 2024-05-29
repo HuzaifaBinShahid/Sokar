@@ -129,12 +129,12 @@ const Pricing = () => {
         <section id="pricing">
             <div className="container pricing-content m-auto md:p-6">
                 <div className="text-center">
-                    <p className='text-colortag my-6 font-normal md:text-4xl xs:text-2xl'>Pricing</p>
-                    <h2 className='md:text-6xl md:my-6 font-semibold xs:text-2xl xs:my-2'>
+                    <p className='text-colortag my-6 font-normal md:text-4xl xs:text-2xl animate-slideDown'>Pricing</p>
+                    <h2 className='md:text-6xl md:my-6 font-semibold xs:text-2xl xs:my-2 animate-slideDown'>
                         Subscription Plans
                     </h2>
-                    <p className='text-paragraph md:text-2xl md:my-12 font-normal xs:text-lg xs:my-12'>
-                        Plaese have a look at our subscription plans you can subscribe any of those to use the app according to your set subscription plan
+                    <p className='text-paragraph md:text-2xl md:my-12 font-normal xs:text-lg xs:my-12 animate-slideDown'>
+                        Please have a look at our subscription plans you can subscribe any of those to use the app according to your set subscription plan
                     </p>
                 </div>
 

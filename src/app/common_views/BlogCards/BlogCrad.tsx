@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import calender from '../../../../public/images/Blogs/calender.png';
+import calender from '../../../../public/images/Blogs/calender.svg';
 import Link from 'next/link';
 
 interface BlogCardProps {
@@ -22,7 +22,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ imageUrl, title, description }) => 
       <div className="text">
         <span className="flex mt-3 text-xs text-gray-500"><Image className='mr-3' src={calender} alt="calender" /> Mar 25, 2024</span>
         <h2 className="text-xl my-4">{title}</h2>
-        <Link href='/'>
+        <Link href='/blogs/blogdetails'>
           <span className="absolute bottom-0 px-0 mx-auto w-max py-2"><span className="text-colortag">Read More...</span></span>
         </Link>
       </div>

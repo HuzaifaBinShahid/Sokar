@@ -73,7 +73,8 @@ const Features = () => {
                             description="Add your insulin units when you find your glucose level down and you can track your preview insulin activity."
                             detailImage={insulindetail}
                             detailImageAlt="Insulin Detail"
-                            detailImageClassName="lg:w-11/12 md:w-4/6 m-auto"
+                            detailImageClassName="xl:w-[95%] lg:w-[74%] md:w-[69%] relative right-[-97px] "
+                           
                         />
                     </div>
                 </div>

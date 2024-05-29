@@ -6,8 +6,9 @@ import Link from 'next/link';
 import blog1 from '../../../../public/images/Blogs/blog1.png'
 import blog2 from '../../../../public/images/Blogs/blog2.png'
 import blog3 from '../../../../public/images/Blogs/blog3.png'
-import calender from '../../../../public/images/Blogs/calender.png'
+import calender from '../../../../public/images/Blogs/calender.svg'
 import getimage from '../../../../public/images/Home/getimage.png'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Blogs = () => {
     return (
@@ -15,14 +16,14 @@ const Blogs = () => {
             <div className="container m-auto  md:p-6">
                 <div className="blogs-content flex justify-between">
                     <div className="text-left py-10">
-                        <p className='text-colortag my-6 font-normal md:text-4xl xs:text-2xl'>Blogs & Articles</p>
-                        <h2 className='md:text-6xl md:my-6 font-semibold xs:text-2xl xs:my-2'>
+                        <p className='text-colortag my-6 font-normal md:text-4xl xs:text-2xl animate-slideDown'>Blogs & Articles</p>
+                        <h2 className='md:text-6xl md:my-6 font-semibold xs:text-2xl xs:my-2 animate-slideDown'>
                             Our Latest Blogs
                         </h2>
                     </div>
 
                     <div className="view">
-                       <Link href = '/blogs'> <p className='text-colortag text-2xl underline pt-20'>View All</p> </Link>
+                       <Link href = '/blogs'> <p className='text-colortag text-2xl underline pt-20 animate-slideDown'>View All <ArrowForwardIcon className='underline'/></p> </Link>
                     </div>
 
                 </div>

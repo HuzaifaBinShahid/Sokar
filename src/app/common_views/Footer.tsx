@@ -1,5 +1,9 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+// Importing Assets
 import footerlogo from '../../../public/images/Footer/footerlogo.svg';
 import linkedin from '../../../public/images/Footer/linkedin.svg';
 import instagram from '../../../public/images/Footer/instagram.svg';
@@ -16,16 +20,27 @@ const Footer = () => {
                 <div className="container m-auto flex">
                     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:my-12 xs:my-6">
                         <div className='section1 flex flex-col m-auto w-full '>
-                            <Image
-                                src={footerlogo}
-                                alt='sokarlogo'
+                            <motion.div
+                                animate={{
+                                    y: [0, -20, 0], // Move up 20px and then back to the initial position
+                                }}
+                                transition={{
+                                    repeat: Infinity, // Repeat the animation infinitely
+                                    duration: 2, // Duration of each cycle (2 seconds)
+                                    ease: 'easeInOut', // Easing function for a smooth effect
+                                }}
                                 className='md:mb-5 md:m-0 xs:m-auto'
-                            />
-                       
+                            >
+                                <Image
+                                    src={footerlogo}
+                                    alt='sokarlogo'
+                                />
+                            </motion.div>
+
                             <p className='text-paragraph text-2xl my-5 md:text-left xs:text-center font-light'>
-                                The sokar app, powered by cutting edge AI Technology and real time glucose monitoring to transform your health journey
+                                The Sokar app, powered by cutting edge AI Technology and real time glucose monitoring to transform your health journey
                             </p>
-                           
+
                             <h6 className='text-4xl font-semibold my-5 md:text-left xs:text-center '>
                                 Follow Us On
                             </h6>
@@ -67,21 +82,21 @@ const Footer = () => {
 
                         <div className="section3 my-12 flex md:justify-start xs:justify-center xs:my-2">
                             <div className="md:text-left xs:text-center">
-                            <h3 className='text-2xl font-semibold'>Contact Us</h3>
-                            <ul>
-                                <li className='text-paragraph my-5 flex md:justify-start xs:justify-center'>
-                                    <Image src={mail} alt='mail' />
-                                    <span className='ml-2'>info@sokarapp.com</span>
-                                </li>
-                                <li className='text-paragraph my-5 flex md:justify-start xs:justify-center'>
-                                    <Image src={phone} alt='phone' />
-                                    <span className='ml-2'>+92 3456789001</span>
-                                </li>
-                                <li className='text-paragraph my-5 flex md:justify-start xs:justify-center'>
-                                    <Image src={location} alt='location' />
-                                    <span className='ml-2'>House no 452, j3 block Johar</span>
-                                </li>
-                            </ul>
+                                <h3 className='text-2xl font-semibold'>Contact Us</h3>
+                                <ul>
+                                    <li className='text-paragraph my-5 flex md:justify-start xs:justify-center'>
+                                        <Image src={mail} alt='mail' />
+                                        <span className='ml-2'>info@sokarapp.com</span>
+                                    </li>
+                                    <li className='text-paragraph my-5 flex md:justify-start xs:justify-center'>
+                                        <Image src={phone} alt='phone' />
+                                        <span className='ml-2'>+92 3456789001</span>
+                                    </li>
+                                    <li className='text-paragraph my-5 flex md:justify-start xs:justify-center'>
+                                        <Image src={location} alt='location' />
+                                        <span className='ml-2'>House no 452, j3 block Johar</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
