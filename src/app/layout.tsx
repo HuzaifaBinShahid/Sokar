@@ -18,12 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon.svg" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />
-        
-        </body>
+      </body>
     </html>
   );
 }
