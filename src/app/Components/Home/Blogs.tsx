@@ -86,7 +86,7 @@ const Blogs = () => {
                 <div className="get m-auto grid lg:grid-cols-2 xs:grid-cols-1 bg-colortag rounded-2xl border-solid border-4 border-border my-10">
                  <div className="text flex flex-col justify-center p-10">
                     <h3 className='lg:text-4xl lg:text-left lg:leading-relaxed my-5 font-semibold leading-normal text-black xs:text-2xl xs:text-center'>Get Sokar App Now and enjoy its personalized glucose management features now!!</h3>
-                    <button className='bg-button text-white text-2xl py-3 px-5 rounded-xl xs:w-2/6 lg:w-2/6 md:w-2/6 md:m-auto xs:m-auto lg:m-0'>Get It Now</button>
+                    <button className='bg-button text-white text-2xl py-3 px-5 rounded-xl xs:w-full lg:w-2/6 md:w-2/6 md:m-auto xs:m-auto lg:m-0'>Get It Now</button>
                  </div>
 
                  <div className="get-image">
