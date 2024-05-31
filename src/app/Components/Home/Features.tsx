@@ -23,7 +23,7 @@ const Features = () => {
                     <h2 className=' md:text-6xl xs:text-xl font-semibold my-5'>What Sokar Offers?</h2>
                 </div>
 
-                <div className="boxes grid md:grid-cols-2 gap-20 my-20">
+                <div className="boxes grid md:grid-cols-2 gap-10 my-20">
 
                     <FeatureCard
                         icon={glucose}
@@ -50,7 +50,7 @@ const Features = () => {
 
                 </div>
 
-                <div className="boxes grid lg:grid-cols-12 md:grid-cols-12 gap-20 my-20">
+                <div className="boxes grid lg:grid-cols-12 md:grid-cols-12 gap-10 my-20">
                     <div className="md:col-span-5 lg:col-span-7">
                         <FeatureCard
                             icon={heart}
@@ -73,7 +73,7 @@ const Features = () => {
                             description="Add your insulin units when you find your glucose level down and you can track your preview insulin activity."
                             detailImage={insulindetail}
                             detailImageAlt="Insulin Detail"
-                            detailImageClassName="xl:w-[95%] lg:w-[74%] md:w-[69%] relative right-[-97px] "
+                            detailImageClassName="2xl:w-[94%] xl:w-[87%] lg:w-[74%] md:w-[69%] relative right-[-97px] "
                            
                         />
                     </div>

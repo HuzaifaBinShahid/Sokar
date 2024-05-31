@@ -129,7 +129,7 @@ const Pricing = () => {
         <section id="pricing">
             <div className="container pricing-content m-auto md:p-6">
                 <div className="text-center">
-                    <p className='text-colortag my-6 font-normal md:text-4xl xs:text-2xl animate-slideDown'>Pricing</p>
+                    <p className='text-colortag mb-6 font-normal md:text-4xl xs:text-2xl animate-slideDown'>Pricing</p>
                     <h2 className='md:text-6xl md:my-6 font-semibold xs:text-2xl xs:my-2 animate-slideDown'>
                         Subscription Plans
                     </h2>

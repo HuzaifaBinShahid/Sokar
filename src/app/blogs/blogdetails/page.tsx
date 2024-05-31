@@ -6,7 +6,7 @@ import calender from '../../../../public/images/Blogs/calender.svg'
 
 const BlogDetail = () => {
   return (
-    <section id="blog-detail" className="flex justify-center">
+    <section id="blog-detail" className="flex justify-center p-5">
       <div className="blog-content">
         <div className="container mx-auto">
           <div className="image my-12 inline-block w-full">
@@ -27,16 +27,16 @@ const BlogDetail = () => {
 
           <h2 className='text-4xl my-10 font-medium'>Which role insulin play in diabetes?</h2>
 
-          <div className="columns-2">
-            <div className="text">
-              <p className='text-2xl leading-10 text-paragraph my-5 w-4/5'>Visualize the marketplace that is your online application.  Data, like customers and products, flows in and out. Ideally, unused data leaves when its job is done, freeing up space for fresh information. However, memory leaks act like sticky shoppers, clinging to data even after it's no longer needed. Visualize the marketplace that is your online application.  Data, like customers and products, flows in and out.</p>
+          <div className="grid lg:grid-cols-2 md:gird-cols-1  my-5 gap-5">
+            <div className="text w-full">
+              <p className='text-2xl leading-10 text-paragraph 2xl:w-4/6 xl:w-5/6 w-full'>Visualize the marketplace that is your online application.  Data, like customers and products, flows in and out. Ideally, unused data leaves when its job is done, freeing up space for fresh information. However, memory leaks act like sticky shoppers, clinging to data even after it's no longer needed. Visualize the marketplace that is your online application.  Data, like customers and products, flows in and out.</p>
             </div>
 
-            <div className="image ">
+            <div className="image w-full ">
               <Image
                 src={blogdetail2}
                 alt='blogdetail 2'
-                className='w-7/12'
+                className='w-full 2xl:w-8/12 xl:w-10/12'
               />
             </div>
           </div>

@@ -16,7 +16,7 @@ const Blogs = () => {
             <div className="container m-auto  md:p-6">
                 <div className="blogs-content flex justify-between">
                     <div className="text-left py-10">
-                        <p className='text-colortag my-6 font-normal md:text-4xl xs:text-2xl animate-slideDown'>Blogs & Articles</p>
+                        <p className='text-colortag mb-6 font-normal md:text-4xl xs:text-2xl animate-slideDown'>Blogs & Articles</p>
                         <h2 className='md:text-6xl md:my-6 font-semibold xs:text-2xl xs:my-2 animate-slideDown'>
                             Our Latest Blogs
                         </h2>
