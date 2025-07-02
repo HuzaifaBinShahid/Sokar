@@ -30,9 +30,9 @@ const Navbar: React.FC = () => {
                         <li className={`inline hover:text-colortag ${isActive('/about')}`}>
                             <Link href='/about'>About</Link>
                         </li>
-                        <li className={`inline hover:text-colortag ${isActive('/features')}`}>
+                        {/* <li className={`inline hover:text-colortag ${isActive('/features')}`}>
                             <Link href='/features'>Features</Link>
-                        </li>
+                        </li> */}
                         <li className={`inline hover:text-colortag ${isActive('/pricing')}`}>
                             <Link href='/pricing'>Pricing</Link>
                         </li>

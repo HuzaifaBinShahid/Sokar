@@ -72,7 +72,7 @@ const Footer = () => {
                                 <h3 className='text-2xl font-semibold'>Important Links</h3>
                                 <ul>
                                     <li className='text-paragraph my-5'>About</li>
-                                    <li className='text-paragraph my-5'>Features</li>
+                                    {/* <li className='text-paragraph my-5'>Features</li> */}
                                     <li className='text-paragraph my-5'>Pricing</li>
                                     <li className='text-paragraph my-5'>Blogs</li>
                                     <li className='text-paragraph my-5'>Contact</li>
